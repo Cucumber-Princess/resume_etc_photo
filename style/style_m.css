@@ -1,0 +1,88 @@
+*{margin: 0; padding: 0;background-repeat: no-repeat; box-sizing: border-box;}
+ul, ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{display: block; max-width: 100%;}
+button{background-color: transparent; border: none; cursor: pointer;}
+input{background-color: transparent; border: none;}
+
+@font-face {
+    font-family: "Butler";
+    src: url(../fonts/Butler/Butler_Black.otf);
+    src: url(../fonts/Butler/Butler_ExtraBold.otf);
+    src: url(../fonts/Butler/Butler_Light.otf);
+    src: url(../fonts/Butler/Butler_Ultra_Light.otf);
+}
+@font-face {
+    font-family: "Butler_Regular";
+    src: url(../fonts/Butler/Butler_Regular.otf);
+}
+@font-face {
+    font-family: "Butler_Bold";
+    src: url(../fonts/Butler/Butler_Bold.otf);
+}
+@font-face {
+    font-family: "Butler_Light";
+    src: url(../fonts/Butler/Butler_Light.otf);
+}
+@font-face {
+    font-family: "Butler_Medium";
+    src: url(../fonts/Butler/Butler_Medium.otf);
+}
+
+#wrapper{min-width: 320px;}
+
+header{
+    width: 100%;
+    background-color: #4161e8;
+}
+header .wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+header .wrap h1{
+    font-family: "Butler_Bold";
+    color: white;
+    font-size: 40px;
+}
+
+.index{}
+.index .wrap{
+    width: 90%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.index .wrap .image{width: 100%;}
+.index .wrap .image button{width: 100%;}
+.index .wrap .image button img{width: 100%;}
+
+.index .wrap .image .popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.index .wrap .image .popup .img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+.index .wrap .image:nth-child(n+7) .popup .img{
+    width: unset;
+}
+.index .wrap .image .popup button{  
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+} 
+.index .wrap .image .popup button img{width: 100%;}
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo</title>
+
+    <link rel="stylesheet" href="style/style_m.css">
+    <link rel="stylesheet" href="style/style_pc.css">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="wrap">
+                <h1>Photo</h1>
+            </div>
+        </header>
+        <div class="index">
+            <div class="wrap">
+                <div class="image">
+                    <button><img src="images/1.jpg" alt="고무신발끈연출샷-1"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/_MG_0326.jpg" alt="고무신발끈연출샷-1"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/2.jpg" alt="고무신발끈연출샷-2"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/_MG_0417.jpg" alt="고무신발끈연출샷-2"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/3.jpg" alt="울세제연출샷-1"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/IMG_9860.jpg" alt="울세제연출샷-1"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/4.jpg" alt="울세제연출샷-2"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/IMG_9873.jpg" alt="울세제연출샷-2"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/5.jpg" alt="스텔스연출샷-1"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/_MG_4642.jpg" alt="스텔스연출샷-1"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/6.jpg" alt="스텔스연출샷-2"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/IMG_0683.jpg" alt="스텔스연출샷-2"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/7.jpg" alt="차량연출샷-1"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/_MG_4247.jpg" alt="차량연출샷-1"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/8.jpg" alt="차량연출샷-2"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/_MG_3761.jpg" alt="차량연출샷-2"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/9.jpg" alt="유리세정제연출샷-1"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/_MG_7931.jpg" alt="유리세정제연출샷-1"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/10.jpg" alt="유리세정제연출샷-2"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/_MG_7954.jpg" alt="유리세정제연출샷-2"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/11.jpg" alt="리플렉션연출샷-1"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/IMG_7785.jpg" alt="리플렉션연출샷-1"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/12.jpg" alt="리플렉션연출샷-2"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/IMG_1509.jpg" alt="리플렉션연출샷-2"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".index .wrap .image button").click(function(){
+                $(this).next().stop().fadeIn();
+            });
+            $(".index .wrap .image .popup button").click(function(){
+                $(this).parent().stop().fadeOut();
+            })
+        });
+    </script>
+</body>
+</html>
